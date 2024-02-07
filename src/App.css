@@ -1,0 +1,19 @@
+@keyframes appearing {
+  0% { opacity: 0; transform: translateX(-200px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  width: 50%;
+}
+
+.container li {
+  animation-name: appearing;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
