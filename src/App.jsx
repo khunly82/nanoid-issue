@@ -12,7 +12,7 @@ function App() {
       <button onClick={() => {
         console.log(items);
         setItems(items => [...items, Math.random()])
-      }}>Ajouter un element</button>
+      }}>Ajouter un element (comme la key est regénérée à chaque render la liste entière est reconstruite)</button>
       <div className='container'>
         <div>
           <p>Liste avec nanoid</p>
